@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧮 Number Guesser Game
 
-## Getting Started
+A fun and interactive number guessing game built with **Next.js**, **React**, and **TailwindCSS** as part of the **Web3Bridge Cohort XIV Pre-Qualification Exercise**. The player tries to guess a randomly generated secret number between 1 and 100 within a limited number of attempts.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+👉 [View Deployed App](https://...)
+
+---
+
+## 🧠 Game Overview
+The Number Guesser Game challenges players to test their intuition and logic by guessing the correct number within a fixed number of tries. Feedback is provided after each guess to guide the player until they either win or lose.
+
+---
+
+## 🎮 How to Play
+1. Select a difficulty level: **Easy (15 tries)**, **Medium (10 tries)**, or **Hard (5 tries)**.
+2. Enter a number between **1 and 100**.
+3. Click **Guess** to submit your answer.
+4. The game will tell you if your guess is *Too High*, *Too Low*, or *Correct*.
+5. You have a limited number of attempts — choose wisely!
+6. Once you win or lose, click **Play Again** to restart the game without reloading the page.
+
+---
+
+## ⚙️ Features
+- ✅ Random secret number generation between 1 and 100
+- ✅ Real-time feedback (*Too High*, *Too Low*, *Correct!*)
+- ✅ Attempt counter with remaining guesses
+- ✅ Win/Loss message display
+- ✅ Restart button (without reloading the page)
+- ✅ Input validation (1–100 only)
+- ✅ Clean, responsive, modern UI
+- ✅ Styled with **TailwindCSS** and primary color `#276100ce`
+- ✅ Difficulty levels: **Easy**, **Medium**, **Hard**
+- ✅ Animated feedback transitions using Tailwind utilities
+- ✅ Modular React component structure for clarity and scalability
+
+---
+
+## 🧱 Folder Structure
+```
+number_guesser_game/
+├── app/
+│   ├── components/
+│   │   ├── difficulty-select.tsx
+│   │   ├── game-board.tsx
+│   │   ├── guess-feedback.tsx
+│   │   ├── guess-history.tsx
+│   │   ├── header.tsx
+│   │   └── result-modal.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.ts
+├── eslint.config.mjs
+├── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧩 Tech Stack
+- **Next.js** – React framework for production
+- **React.js** – Frontend library
+- **TailwindCSS** – Styling and layout
+- **TypeScript** – For type safety
+- **Vercel** – Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Running Locally
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Clone this repository
+```bash
+git clone https://github.com/your-username/number-guesser-game.git
+cd number-guesser-game
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Start the development server
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+The app will run locally at [http://localhost:3000](http://localhost:3000) (or another port if 3000 is busy).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Additional Setup
+
+If you encounter errors related to missing CSS modules (e.g., `tw-animate-css`), install them:
+```bash
+npm install tw-animate-css
+```
+
+---
+
+## 🧑‍💻 Contributing
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
+---
+
+## 🙏 Credits
+- Built by EDOHWAREZ for Web3Bridge Cohort XIV
+- Inspired by classic number guessing games
+
+---
